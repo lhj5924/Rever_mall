@@ -28,6 +28,14 @@
 .btn__container {
   display: flex;
 }
+.list__container > div,
+.btn__container > div {
+  margin: 0 16px;
+}
+.list__container > div:hover,
+.btn__container > div:hover {
+  text-decoration: underline;
+}
 
 .underContainer {
   height: 90px;
@@ -40,6 +48,46 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 32px;
+  font-style: italic;
+  text-underline-position: under;
+}
+.logo__container > :first-child {
+  font-weight: 800;
+}
+.logo__container > :last-child {
+  font-weight: 800;
+  text-decoration: underline;
+  margin-left: 8px;
+}
+
+.category__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+}
+.category__container > p {
+  margin: 0 16px;
+}
+.category__container > p:hover {
+  text-decoration: underline;
+}
+
+.sort__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+}
+.sort__container > p {
+  margin: 0 4px;
+}
+.sort__container > p:hover {
+  text-decoration: underline;
+}
+.sort__container > p::after {
+  content: "|";
 }
 
 /*# sourceMappingURL=style.css.map */

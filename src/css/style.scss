@@ -26,6 +26,12 @@
 .list__container,
 .btn__container {
   display: flex;
+  & > div {
+    margin: 0 16px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 .underContainer {
   height: 90px;
@@ -37,4 +43,44 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 32px;
+  font-style: italic;
+  text-underline-position: under;
+  & > :first-child {
+    font-weight: 800;
+  }
+  & > :last-child {
+    font-weight: 800;
+    text-decoration: underline;
+    margin-left: 8px;
+  }
+}
+// Catergory
+.category__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  & > p {
+    margin: 0 16px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+// Sort
+.sort__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+  & > p {
+    margin: 0 4px;
+    &:hover {
+      text-decoration: underline;
+    }
+    &::after {
+      content: "|";
+    }
+  }
 }
