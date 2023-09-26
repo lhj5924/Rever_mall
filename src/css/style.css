@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: teal;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header__container {
+  max-width: 1200px;
+  height: 150px;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+
+.upperContainer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list__container,
+.btn__container {
+  display: flex;
+}
+
+.underContainer {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */
